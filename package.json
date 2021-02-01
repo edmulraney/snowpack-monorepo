@@ -1,10 +1,15 @@
 {
+  "name": "@edmulraney/snowpack-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Edward Mulraney <edmulraney@gmail.com>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+    "build": "yarn workspace @edmulraney/components build && yarn workspace @edmulraney/launch-kit build && yarn workspace @edmulraney/app build",
+    "start": "yarn workspace @edmulraney/app start"
   },
-  "devDependencies": {
-    "snowpack": "^3.0.1"
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }

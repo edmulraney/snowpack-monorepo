@@ -1,0 +1,33 @@
+{
+  "name": "@edmulraney/app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "index.js",
+  "author": "Edward Mulraney <edmulraney@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "prettier": "@edmulraney/prettier-config",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+  },
+  "devDependencies": {
+    "@edmulraney/prettier-config": "^1.0.0",
+    "@edmulraney/typescript-config": "^1.0.0",
+    "@snowpack/plugin-react-refresh": "^2.4.0",
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/theme-ui": "^0.3.7",
+    "prettier": "2.2.1",
+    "snowpack": "^3.0.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@edmulraney/launch-kit": "^1.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "theme-ui": "0.6.0-alpha.6"
+  }
+}

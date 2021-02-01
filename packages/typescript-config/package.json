@@ -1,0 +1,7 @@
+{
+  "name": "@edmulraney/typescript-config",
+  "version": "1.0.0",
+  "main": "tsconfig.json",
+  "license": "MIT",
+  "private": true
+}
