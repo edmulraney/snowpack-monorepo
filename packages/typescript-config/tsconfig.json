@@ -1,5 +1,4 @@
 {
-  // "include": ["**/src"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
@@ -13,10 +12,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error"
-    // "baseUrl": "./packages",
-    // "paths": {
-    //   "@edmulraney/*": ["*/src"]
-    // }
+    "importsNotUsedAsValues": "error",
+    "paths": {
+      "@edmulraney/launch-kit": ["./launch-kit"],
+      "@edmulraney/components": ["./components"]
+    }
   }
 }

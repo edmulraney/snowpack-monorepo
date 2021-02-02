@@ -1,3 +1,4 @@
 {
-  "extends": "@edmulraney/typescript-config"
+  "extends": "@edmulraney/typescript-config",
+  "include": ["src"]
 }
