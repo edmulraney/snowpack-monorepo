@@ -12,10 +12,6 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error",
-    "paths": {
-      "@edmulraney/launch-kit": ["./launch-kit"],
-      "@edmulraney/components": ["./components"]
-    }
+    "importsNotUsedAsValues": "error"
   }
 }
