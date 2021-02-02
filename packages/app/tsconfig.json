@@ -1,4 +1,12 @@
 {
   "extends": "@edmulraney/typescript-config",
-  "include": ["src"]
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../components"
+    },
+    {
+      "path": "../launch-kit"
+    }
+  ]
 }
