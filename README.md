@@ -1,7 +1,19 @@
 # Snowpack monorepo
 
-> ✨ POC repo demonstrating Snowpack powering a monorepo with React, TypeScript and React Fast Refresh.
+> ✨ POC repo demonstrating tsc project reference problems.
 
+# Pre requisite
+To see the issues with `tsc` project references you need to patch `node_modules/@snowpack/plugin-typescript` to remove `--noEmit`
+```
+-        `${tsc ? tsc : 'tsc'} ${args ? args : ''} --noEmit ${isDev ? '--watch' : ''}`,
++        `${tsc ? tsc : 'tsc'} ${args ? args : ''} ${isDev ? '--watch' : ''}`,
+```
+# TS issues with TypeScript project references
+- `tsc --build` can't correctly display anything other than the *latest* TS issue (they get cached or not displayed): https://github.com/edmulraney/project-references-demo
+- `snowpack dev` works the same way `tsc --build --watch` does. 
+
+
+# Normal README:
 ## TLDR; demo packages
 - `components` - a UI component library
 - `launch-kit` - a "framework" which uses `components` 
