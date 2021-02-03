@@ -7,7 +7,7 @@ module.exports = {
     '../components': '/@edmulraney/components',
   },
   plugins: [
-    '@snowpack/plugin-typescript',
+    ['@snowpack/plugin-typescript', { args: '--build --incremental' }],
     '@snowpack/plugin-react-refresh',
   ],
   routes: [

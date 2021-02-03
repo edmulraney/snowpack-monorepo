@@ -6,17 +6,22 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "jsx": "preserve",
-    "noEmit": true,
+    // "noEmit": true,
     "skipLibCheck": true,
     "typeRoots": ["node_modules/@types"],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error"
-  }
-  /*
-  You cannot put references in here as currently typescript extended configs are broken.
-  tsc treats *this* extended config path as the relative path from which you run tsc, not the actual path where you do run tsc from (e.g. a sibling monorepo package)
-  https://github.com/microsoft/TypeScript/issues/25430
-  */
+    "importsNotUsedAsValues": "error",
+    "noEmit": false,
+    "composite": true,
+    "incremental": true,
+    "build": true,
+    "declaration": true
+  },
+  "references": [
+    {
+      "path": "../app"
+    }
+  ]
 }

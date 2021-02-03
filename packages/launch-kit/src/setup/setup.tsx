@@ -2,7 +2,7 @@ import React from 'react'
 import { Heading } from 'theme-ui'
 import { SpecialButton } from '@edmulraney/components'
 
-type SetupProps = { a: boolean }
+type SetupProps = { b: boolean }
 
 const Setup: React.FC<SetupProps> = (props) => {
   return (
