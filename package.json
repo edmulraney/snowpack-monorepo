@@ -6,8 +6,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "yarn workspace @edmulraney/components build && yarn workspace @edmulraney/launch-kit build && yarn workspace @edmulraney/app build",
-    "start": "yarn workspace @edmulraney/app start"
+    "start": "yarn workspace @edmulraney/app start",
+    "build": "yarn workspace @edmulraney/app build"
   },
   "workspaces": [
     "packages/*"

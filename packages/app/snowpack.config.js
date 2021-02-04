@@ -10,16 +10,6 @@ module.exports = {
     '@snowpack/plugin-typescript',
     '@snowpack/plugin-react-refresh',
   ],
-  routes: [
-  ],
-  optimize: {
-  },
-  packageOptions: {
-  },
-  devOptions: {
-  },
-  buildOptions: {
-  },
   alias: {
     '@edmulraney/launch-kit': '../launch-kit',
     '@edmulraney/components': '../components'
